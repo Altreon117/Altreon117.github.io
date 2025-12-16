@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <title>MH S2 Monstripédie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="image" href="/static/icons/Wall.jpeg" fetchpriority="high">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script defer src="/js/script.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="navbar-container">
+            <img src="/static/icons/logo.png" alt="MH S2 Logo" class="navbar-logo"/> 
+            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#monstres">Monstres</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="accueil">
+        <img class="hero-bg" src="/static/icons/Wall.jpeg" alt="" fetchpriority="high" decoding="async">
+        <div class="hero-content">
+            <h1>Monstripédie de Monster Hunter Stories 2</h1>
+            <a class="cta-button" href="#monstres">Découvrir Quelques uns</a>
+        </div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section class="cards-section" id="monstres">
+        <h2>Le Quatuor du Destin</h2>
+        <div class="cards-container">
+            <div class="card" data-img="/static/monstries/Hellblade Glavenus.png" data-title="Hellblade Glavenus" data-desc="Le Glavenus-Lame-Infernale est une bête d'une violence extrême. Son épée caudale, chauffée à blanc par la combustion de gaz explosifs, est constamment recouverte de flammes bleues. Chaque coup laisse des traînées de poudre explosive, transformant le champ de bataille en un véritable enfer. Seuls les chasseurs les plus aguerris osent affronter sa lame incandescente.">
+                <div class="card-title">Hellblade Glavenus</div>
+                <img src="/static/monstries/Hellblade Glavenus.png" alt="Glavenus-Lame-Infernale" loading="lazy" decoding="async" width="300" height="300"/>
+            </div>
+            <div class="card" data-img="/static/monstries/ElderFrost Gammoth.png" data-title="Elderfrost Gammoth" data-desc="Le Gammoth-Givre-Ancien est une force de la nature, même parmi sa propre espèce. Ses attaques glaciaires sont si puissantes qu'elles figent l'air. Ce Déviant utilise sa trompe massive et ses pieds renforcés pour piétiner ses proies, tout en recouvrant ses membres de glace épaisse, augmentant leur portée et leur capacité destructrice. Une montagne de puissance pure.">
+                <div class="card-title">Elderfrost Gammoth</div>
+                <img src="/static/monstries/ElderFrost Gammoth.png" alt="Gammoth-Givre-Ancien" loading="lazy" decoding="async" width="300" height="300"/>
+            </div>
+            <div class="card" data-img="/static/monstries/Soulseer Mizutsune.png" data-title="Soulseer Mizutsune" data-desc="L'élégance cache une dangerosité mortelle chez le Mizutsune-Âme-Voyante. Ce Déviant maîtrise ses bulles avec une précision hypnotique, allant jusqu'à créer des bulles explosives qui traquent l'ennemi. Son regard perçant semble anticiper chaque mouvement, et son pelage est d'une teinte encore plus riche et mystique. Un adversaire aussi beau que redoutable.">
+                <div class="card-title">Soulseer Mizutsune</div>
+                <img src="/static/monstries/Soulseer Mizutsune.png" alt="Soulseer Mizutsune" loading="lazy" decoding="async" width="300" height="300"/>
+            </div>
+            <div class="card" data-img="/static/monstries/Boltreaver Astalos.png" data-title="Boltreaver Astalos" data-desc="Le Astalos-Foudre-Faucheuse est une machine de guerre électrisante. Ce Déviant a poussé sa maîtrise de l'électricité à un niveau extrême, concentrant son énergie en un faisceau dévastateur ou en des charges électriques ultra-rapides. Sa queue, en particulier, est un véritable fouet électrique capable de trancher l'air et l'armure. Une tempête de foudre incarnée.">
+                <div class="card-title">Boltreaver Astalos</div>
+                <img src="/static/monstries/Boltreaver Astalos.png" alt="Boltreaver Astalos" loading="lazy" decoding="async" width="300" height="300"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRESENTATION SECTION (SPLIT) -->
+    <section class="presentation">
+        <div class="presentation-image">
+            <img id="feature-image" src="/static/monstries/Hellblade Glavenus.png" alt="Hellblade Glavenus" loading="lazy" decoding="async" width="600" height="600"/>
+        </div>
+        <div class="presentation-text">
+            <h2 id="feature-title">Hellblade Glavenus</h2>
+            <p id="feature-description">Lame infernale, queue-incandescente et puissance brute dans chaque coup.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-section" id="contact">
+        <h2>Formulaire de Contact</h2>
+        <form class="contact-form" method="post" action="#">
+            <label for="email">Votre email</label>
+            <input id="email" name="email" type="email" placeholder="Votre email" autocomplete="email" required>
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <p>&copy; 2024 Monstripédie MH S2. Tous droits réservés.</p>
+            </div>
+            <div class="footer-faq">
+                <div class="faq-item">
+                    <button class="faq-toggle" id="faq-btn-1" aria-expanded="false" aria-controls="faq-1">FAQ - Général</button>
+                    <div class="faq-content" id="faq-1" role="region" aria-labelledby="faq-btn-1">
+                        <p>Questions fréquemment posées sur le site...</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-toggle" id="faq-btn-2" aria-expanded="false" aria-controls="faq-2">FAQ - Monstres</button>
+                    <div class="faq-content" id="faq-2" role="region" aria-labelledby="faq-btn-2">
+                        <p>Questions sur les créatures et leurs caractéristiques...</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-toggle" id="faq-btn-3" aria-expanded="false" aria-controls="faq-3">FAQ - Technique</button>
+                    <div class="faq-content" id="faq-3" role="region" aria-labelledby="faq-btn-3">
+                        <p>Questions techniques sur le site...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>
